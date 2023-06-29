@@ -1,0 +1,14 @@
+/* Styles pour la page CV */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+img {
+    max-width: 95%;
+    max-height: 95%;
+}
