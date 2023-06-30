@@ -5,14 +5,33 @@
 }
 
 body {
-    font-family: 'Source Sans Pro', sans-serif;
+    background-color: whitesmoke;
+    font-family: 'Acme', sans-serif;
 }
 
 header {
-    background-color: #003366;
+    border-radius: 0 0 10px 10px;
     padding: 20px;
+    margin: 15px;
     text-align: center;
+    border: solid black 1px;
     color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    background: linear-gradient(45deg, rgb(173, 94, 173), rgb(47, 70, 154), rgb(33, 119, 143));
+    background-size: 400% 400%;
+    animation: gradientAnimation 2.5s ease infinite;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 h1 {
@@ -27,11 +46,63 @@ p {
 
 img {
     object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+img:hover:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    transition: opacity 0.5s ease;
+}
+
+img:hover:after:hover {
+    opacity: 0;
 }
 
 nav {
-    background-color: #f2f2f2;
     padding: 10px;
+    border-radius: 10px 10px 0 0;
+    margin-left: 15px;
+    margin-right: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    border: solid black 1px;
+    background: linear-gradient(90deg, rgb(173, 94, 173), rgb(47, 70, 154), rgb(33, 119, 143));
+    background-size: 400% 400%;
+    animation: gradientAnimation 2.5s ease infinite;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.photoCV {
+    width: 50%;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+}
+
+.photoCV:hover {
+    transform: scale(1);
 }
 
 .nav-menu {
@@ -47,7 +118,13 @@ nav {
 
 .nav-menu li a {
     text-decoration: none;
-    color: #333;
+    color: white;
+    font-weight: 700;
+}
+
+.nav-menu li a:hover {
+    text-decoration: none;
+    color: white;
     font-weight: 700;
 }
 
@@ -185,39 +262,43 @@ h2 {
     margin-top: 15px;
     border-radius: 4px;
     transition: box-shadow 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    background: linear-gradient(45deg, rgb(173, 94, 173), rgb(47, 70, 154), rgb(33, 119, 143));
+    background-size: 400% 400%;
+    animation: gradientAnimation 2.5s ease infinite;
 }
 
-.cta-button:hover {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
-    background-image: linear-gradient(#003366, #0059b3);
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 footer {
-    background-color: #f2f2f2;
     padding: 20px;
     text-align: center;
     font-size: 14px;
-    color: #555;
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    background: linear-gradient(45deg, rgb(173, 94, 173), rgb(47, 70, 154), rgb(33, 119, 143));
+    background-size: 400% 400%;
+    animation: gradientAnimation 2.5s ease infinite;
 }
 
-.social-links {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10px;
-}
-
-.social-links li {
-    margin: 0 10px;
-}
-
-.social-links li a {
-    color: #555;
-    font-size: 20px;
-    text-decoration: none;
-}
-
-.social-links li a:hover {
-    color: #003366;
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
