@@ -5,12 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page d'accueil</title>
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <link rel="icon" type="image/x-icon" href="images/dev.ico">
 </head>
-
 
 <body>
     <header>
@@ -31,13 +34,15 @@
     <section id="accueil-section" class="presentation-section">
         <div class="presentation-container">
             <h2>Bienvenue dans mon univers digital créatif !</h2>
+            <img src="images/photo_cv.jpg" class="photoCV">
 
             <p>Je m'appelle William Ranc, j'ai 29 ans et je suis passionné par le design et la création digitale. Après avoir obtenu mon diplôme de Développeur Full-Stack, j'ai réalisé que mon véritable intérêt résidait dans le domaine du design et du front-end.
                 Je consacre mon temps personnel à explorer les possibilités créatives de logiciels tels que Photoshop et Adobe XD.</p>
             <br>
             <p>J'apprécie particulièrement le processus de conception et j'aime créer des interfaces simples, épurées et conviviales. Mon objectif est de combiner mes compétences en développement et en design pour offrir des expériences utilisateur optimales.</p>
 
-            <a href="#portfolio-section" class="cta-button">Découvrir mon travail</a>
+
+            <a href="#portfolio-section" class="cta-button portfolio-button">Découvrir mon travail</a>
         </div>
     </section>
 
@@ -49,8 +54,8 @@
                 <div class="parcours-professionnel">
                     <h3>Parcours professionnel</h3>
                     <ul>
-                        <li><strong>Visiativ - DSI</strong> : Développement sur du Java, amélioration visuelle de l'Intranet, création moderne et design des offres d'emploi.</li>
                         <li><strong>Visiativ - Equipe digitale</strong> : Développement sur Angular, réalisation de maquettes FIGMA (mobile et desktop), modification et refactorisation du CSS, ajout de classe Bootstrap.</li>
+                        <li><strong>Visiativ - DSI</strong> : Développement sur du Java, amélioration visuelle de l'Intranet, création moderne et design des offres d'emploi.</li>
                     </ul>
                 </div>
 
@@ -66,7 +71,6 @@
                 <div class="formations-certifications">
                     <h3>Formations et certifications</h3>
                     <ul>
-                        <li>BAC Professionnel Services Aux Personnes</li>
                         <li>BAC+2 Développeur Full-Stack</li>
                     </ul>
                 </div>
@@ -75,8 +79,6 @@
 
         <a href="cv.html" class="cta-button" target="_blank">Voir mon CV</a>
     </section>
-
-
 
     <section id="portfolio-section">
         <div class="portfolio-title">
@@ -115,17 +117,35 @@
                 <p>Cover personnalisé de WWE 2K22 mais avec cette foic-ci Roman Reigns.</p>
             </div>
 
+            <div class="project">
+                <img src="images/spiderman.jpg" alt="Création 2">
+                <h3>Marvel's Spider-Man</h3>
+                <p>Cover personnalisé du jeu Marvel's Spider-Man.</p>
+            </div>
+
+            <div class="project">
+                <img src="images/SVR.jpg" alt="Création 2">
+                <h3>WWE 2K18</h3>
+                <p>Cover personnalisé du jeu WWE 2K18 comme à l'époque des jeux THQ.</p>
+            </div>
+
+            <div class="project">
+                <img src="images/Tekken7.jpg" alt="Création 2">
+                <h3>Tekken 7</h3>
+                <p>Cover personnalisé du jeu Tekken 7.</p>
+            </div>
+
+            <div class="project">
+                <img src="images/WTK.png" alt="Création 2">
+                <h3>Will The King</h3>
+                <p>Logo imaginé pour un de mes pseudonymes de jeux vidéos.</p>
+            </div>
         </div>
     </section>
 
     <footer>
         <div class="footer-container">
             <p>Tous droits réservés &copy; 2023 Mon Portfolio</p>
-            <ul class="social-links">
-                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-            </ul>
         </div>
     </footer>
 </body>
